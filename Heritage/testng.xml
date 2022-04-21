@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+<listener class-name="base.Listener"></listener>
+</listeners>
+  <test  name="Test" thread-count="1" parallel="instances">
+    <classes>
+      <class name="testpackage.TestVPN_top10domain2"/>
+  
+      <class name="testpackage.VPN_top10domainTest"/>
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
