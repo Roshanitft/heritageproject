@@ -18,10 +18,6 @@ jobs:
     - name: Build project with Maven
       run: mvn clean install
       
-    - name: run folder
-      run: |
-        cd target
-        ls -a
     
 
       
