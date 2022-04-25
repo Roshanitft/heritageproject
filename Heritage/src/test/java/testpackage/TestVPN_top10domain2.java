@@ -43,8 +43,12 @@ public class TestVPN_top10domain2 {
 
         System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
         String extension_Path = System.getProperty("user.dir");
-        ChromeOptions chromeOptions = new ChromeOptions();
-	options.addArgument("headless");
+        ChromeOptions options = new ChromeOptions();
+	options.addArguments("--no-sandbox");
+	options.addArguments("--disable-dev-shm-usage");
+	options.addArguments("--headless");
+	driver = new ChromeDriver(options);
+	driver.navigate().to("https://www.google.com");
         
    
      	driver = new ChromeDriver(chromeOptions);
