@@ -17,5 +17,8 @@ jobs:
 
     - name: Build project with Maven
       run: mvn clean install
+      
+    - name: run file
+      run: Heritage/src/test/java/testpackage/topdomain/TestVPN_top10domain2.java
 
       
