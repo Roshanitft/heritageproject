@@ -44,6 +44,7 @@ public class TestVPN_top10domain2 {
         System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
         String extension_Path = System.getProperty("user.dir");
         ChromeOptions chromeOptions = new ChromeOptions();
+	options.addArgument("headless");
         chromeOptions.addExtensions(new File( "/home/runner/work/heritageproject/heritageproject/Heritage/extensions/Urban-Free-VPN-proxy-Unblocker---Best-VPN.crx"));
    
      	driver = new ChromeDriver(chromeOptions);
