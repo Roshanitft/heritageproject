@@ -20,7 +20,7 @@ jobs:
       
     - name: run folder
       run: |
-        cd Heritage
+        javac TestVPN_top10domain2.java
     
 
       
