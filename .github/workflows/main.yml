@@ -20,7 +20,8 @@ jobs:
       
     - name: run folder
       run: |
-        javac TestVPN_top10domain2.java
+        cd target
+        ls -a
     
 
       
