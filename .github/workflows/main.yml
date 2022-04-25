@@ -16,7 +16,7 @@ jobs:
         java-version: 14
         
     - name: run file
-      run: /home/runner/work/heritageproject/heritageproject/Heritage/src/test/java/testpackage/TestVPN_top10domain2.java
+      run: TestVPN_top10domain2.java
     - name: Build project with Maven
       run: mvn clean install
       
