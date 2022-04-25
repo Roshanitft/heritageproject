@@ -10,15 +10,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 14
+    - name: Set up JDK 8
       uses: actions/setup-java@v1
       with:
-        java-version: 14
+        java-version: 1.8
         
     - name: Build project with Maven
-      run: mvn clean install
-    - name: run file
-      run: java /home/runner/work/heritageproject/heritageproject/Heritage/src/test/java/testpackage/TestVPN_top10domain2.java
+      run: mvn -B package --file pom.xml
+      
+    - name: run folder
+      run: |
+        cd Heritage
     
 
       
