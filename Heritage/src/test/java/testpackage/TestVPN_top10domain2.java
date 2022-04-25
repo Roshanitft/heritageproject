@@ -47,8 +47,7 @@ public class TestVPN_top10domain2 {
 	options.addArguments("--no-sandbox");
 	options.addArguments("--disable-dev-shm-usage");
 	options.addArguments("--headless");
-	driver = new ChromeDriver(options);
-	driver.navigate().to("https://www.google.com");
+
         
    
      	driver = new ChromeDriver(chromeOptions);
