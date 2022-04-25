@@ -50,7 +50,6 @@ public class TestVPN_top10domain2 {
 
         
    
-     	driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
