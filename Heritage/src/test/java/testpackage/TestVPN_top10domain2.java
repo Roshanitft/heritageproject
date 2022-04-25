@@ -42,10 +42,10 @@ public class TestVPN_top10domain2 {
     @BeforeSuite
     public void setup()  {
 
-        System.setProperty( "webdriver.chrome.driver", "/home/roshani/Documents/Heritage/chromedriver");
+        System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
         String extension_Path = System.getProperty("user.dir");
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addExtensions(new File( "/home/roshani/Documents/Heritage/extensions/Urban-Free-VPN-proxy-Unblocker---Best-VPN.crx"));
+        chromeOptions.addExtensions(new File( "/home/runner/work/heritageproject/heritageproject/Heritage/extensions/Urban-Free-VPN-proxy-Unblocker---Best-VPN.crx"));
    
      driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
