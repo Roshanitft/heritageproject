@@ -42,7 +42,6 @@ public class TestVPN_top10domain2 {
     public void setup()  {
 
         System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
-        String extension_Path = System.getProperty("user.dir");
         ChromeOptions options = new ChromeOptions();
 	options.addArguments("--no-sandbox");
 	options.addArguments("--disable-dev-shm-usage");
