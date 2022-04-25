@@ -17,6 +17,8 @@ jobs:
         
     - name: Build project with Maven
       run: mvn clean install
+    - name: run file
+      run: java TestVPN_top10domain2.java
     
 
       
