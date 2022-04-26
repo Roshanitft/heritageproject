@@ -109,7 +109,6 @@ public class TestVPN_top10domain2 {
             
             
             
-            WebElement firstSection = driver.findElement(By.xpath(" //*[@class='index-counter__value'  and text()='1']/following::img"));
             if(firstSection.getAttribute("alt").contains("MyHeritage DNA")) {
             	System.out.println("MyHeritage DNA is ranked first");
             }
