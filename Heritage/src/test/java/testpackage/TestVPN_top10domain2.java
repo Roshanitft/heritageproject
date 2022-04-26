@@ -43,15 +43,16 @@ public class TestVPN_top10domain2 {
     public void setup()  {
 
         System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-	options.addArguments("start-maximized"); // open Browser in maximized mode
-	options.addArguments("disable-infobars"); // disabling infobars
-	options.addArguments("--disable-extensions"); // disabling extensions
-	options.addArguments("--disable-gpu"); // applicable to windows os only
-	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	options.addArguments("--no-sandbox"); // Bypass OS security model
-	WebDriver driver = new ChromeDriver(options);
-	driver.get("https://google.com");
+        String extension_Path = System.getProperty("user.dir");
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("headless");
+        //chromeOptions.addExtensions(new File( "/home/roshani/Documents/Heritage/extensions/Urban-Free-VPN-proxy-Unblocker---Best-VPN.crx"));
+   
+     driver = new ChromeDriver(chromeOptions);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+
+
 
 
     }
