@@ -109,13 +109,6 @@ public class TestVPN_top10domain2 {
             
             
             
-            if(firstSection.getAttribute("alt").contains("MyHeritage DNA")) {
-            	System.out.println("MyHeritage DNA is ranked first");
-            }
-            else {
-            	System.out.println(firstSection.getAttribute("alt")+"is ranked first");
-            }
-            
             
             
            
