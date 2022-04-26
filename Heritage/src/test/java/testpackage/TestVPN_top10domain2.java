@@ -45,7 +45,7 @@ public class TestVPN_top10domain2 {
 	String extension_Path = System.getProperty("user.dir");
 	ChromeOptions chromeOptions = new ChromeOptions();
 	chromeOptions.addArguments("--headless");
- 	chromeOptions.addExtensions(new File( "/home/runner/work/heritageproject/heritageproject/Heritage/extensions/Urban-Free-VPN-proxy-Unblocker---Best-VPN.crx"));
+ 	//chromeOptions.addExtensions(new File( "/home/runner/work/heritageproject/heritageproject/Heritage/extensions/Urban-Free-VPN-proxy-Unblocker---Best-VPN.crx"));
     
       driver = new ChromeDriver(chromeOptions);
 
@@ -65,41 +65,41 @@ public class TestVPN_top10domain2 {
     @Test(invocationCount=1,threadPoolSize=1)
     public void vpnInit() throws InterruptedException, AWTException {
 
-        String arr[] = {"Sweden"};
+        //String arr[] = {"Sweden"};
         //"United States", "United Kingdom", "Canada", "Australia", "Germany", "Netherlands", "Switzerland", 
 
-        for (int i = 0; i < arr.length; i++) {
-            driver.get("chrome-extension:\\eppiocemhmnlbhjplcgkofciiegomcon\\popup\\index.html");
-            String parent = driver.getWindowHandle();
-            Thread.sleep(10000);
+        //for (int i = 0; i < arr.length; i++) {
+            //driver.get("chrome-extension:\\eppiocemhmnlbhjplcgkofciiegomcon\\popup\\index.html");
+            //String parent = driver.getWindowHandle();
+            //Thread.sleep(10000);
 
-            Set<String> winHandles = driver.getWindowHandles();
-            System.out.println("Windows:" + winHandles.size());
-            Iterator<String> it = winHandles.iterator();
-            if (winHandles.size() > 1) {
-                while (it.hasNext()) {
-                    String childWindow = it.next();
-                    if (!parent.equals(childWindow)) {
-                        driver.switchTo().window(childWindow);
-                        driver.close();
-                        driver.switchTo().window(parent);
-                    }
-                }
-            }
+            //Set<String> winHandles = driver.getWindowHandles();
+            //System.out.println("Windows:" + winHandles.size());
+            //Iterator<String> it = winHandles.iterator();
+            //if (winHandles.size() > 1) {
+               // while (it.hasNext()) {
+                   // String childWindow = it.next();
+                    //if (!parent.equals(childWindow)) {
+                        //driver.switchTo().window(childWindow);
+                        //driver.close();
+                        //driver.switchTo().window(parent);
+                    //}
+                //}
+            //}
 
-            webDriverWait = new WebDriverWait(driver, 40);
-            PageClassVPN vpnPage = new PageClassVPN(driver);
-            if (driver.findElements(By.xpath("//*[text()='Agree']")).size() > 0) {
-                webDriverWait.until(ExpectedConditions.elementToBeClickable(vpnPage.agree_Btn)).click();
-            }
-            if (driver.findElements(By.xpath("//div[@class='select_location']/descendant::div[@class='cross_button']")).size() > 0) {
-                webDriverWait.until(ExpectedConditions.elementToBeClickable(vpnPage.cross_Btn)).click();
-            }
+            //webDriverWait = new WebDriverWait(driver, 40);
+            //PageClassVPN vpnPage = new PageClassVPN(driver);
+            //if (driver.findElements(By.xpath("//*[text()='Agree']")).size() > 0) {
+                //webDriverWait.until(ExpectedConditions.elementToBeClickable(vpnPage.agree_Btn)).click();
+            //}
+            //if (driver.findElements(By.xpath("//div[@class='select_location']/descendant::div[@class='cross_button']")).size() > 0) {
+                //webDriverWait.until(ExpectedConditions.elementToBeClickable(vpnPage.cross_Btn)).click();
+            //}
 
-            js = (JavascriptExecutor) driver;
-            action = new Actions(driver);
+            //js = (JavascriptExecutor) driver;
+            //action = new Actions(driver);
             // String ele = "//ul[@class='locations']/li";
-            vpnCountrySelector(arr[i]);
+            //vpnCountrySelector(arr[i]);
             //  Thread.sleep(5000);
             driver.get("https://top10.com/dna-testing/comparison");
             Thread.sleep(2000);
