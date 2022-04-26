@@ -40,12 +40,11 @@ public class TestVPN_top10domain2 {
 
     @BeforeSuite
     public void setup()  {
-
+        public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
 	String extension_Path = System.getProperty("user.dir");
 	ChromeOptions chromeOptions = new ChromeOptions();
-	
- 	chromeOptions.addArgument("headless");
+	chromeOptions.addArgument("headless");
  	    
         WebDriver driver = new ChromeDriver(chromeOptions);
 
@@ -53,7 +52,7 @@ public class TestVPN_top10domain2 {
 
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-
+	}
 
         
    
