@@ -43,7 +43,6 @@ public class TestVPN_top10domain2 {
     public void setup()  {
 
         System.setProperty( "webdriver.chrome.driver", "/home/roshani/Documents/Heritage/chromedriver");
-        String extension_Path = System.getProperty("user.dir");
         ChromeOptions options = new ChromeOptions();
 	options.addArguments("start-maximized"); // open Browser in maximized mode
 	options.addArguments("disable-infobars"); // disabling infobars
