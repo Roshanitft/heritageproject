@@ -150,6 +150,7 @@ public class TestVPN_top10domain2 {
             	}
             	
             }
+    }
             
             
             
@@ -204,10 +205,10 @@ public class TestVPN_top10domain2 {
                 String div_text;
 
 
-            }*/
+            }
         }
 
-    }
+    }*/
 
 
     public void vpnCountrySelector(String country) throws InterruptedException {
