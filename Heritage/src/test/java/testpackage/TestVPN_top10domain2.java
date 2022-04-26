@@ -43,9 +43,8 @@ public class TestVPN_top10domain2 {
 
         System.setProperty( "webdriver.chrome.driver", "/home/runner/work/heritageproject/heritageproject/Heritage/chromedriver");
 	ChromeOptions chromeOptions = new ChromeOptions();
-	chromeOptions.addArgument("headless") 
+	chromeOptions.addArgument("headless");
      	driver = new ChromeDriver(chromeOptions);
-	driver.get("www.google.com");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
