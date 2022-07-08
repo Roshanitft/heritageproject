@@ -18,7 +18,7 @@ jobs:
         env: ./.env
     - name: run
       run: |
-           echo my name is  ${{ env.PORT }}
+           echo my name is  ${{ secret.PORT }}
         
 #     - name: Build project with Maven
 #       run: |
