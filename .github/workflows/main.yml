@@ -18,7 +18,7 @@ jobs:
         env_file: ./.env
     - name: run
       run: |
-          echo "port = ${{env.port}}"
+           port: ${{ env.port }}
         
 #     - name: Build project with Maven
 #       run: |
