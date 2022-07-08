@@ -7,6 +7,7 @@ jobs:
   build_and_test:
 
     runs-on: ubuntu-latest
+    environment: qa
    
     
     steps:
@@ -15,10 +16,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-        env: ./.env
+        
     - name: run
       run: |
-           echo my name is  ${{ secret.PORT }}
+           echo my name is  ${{ secret.MAIL_USERNAME }}
         
 #     - name: Build project with Maven
 #       run: |
