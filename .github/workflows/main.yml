@@ -19,7 +19,7 @@ jobs:
         
     - name: run
       run: |
-           echo my name is  ${{ secret.MAIL_USERNAME }}
+           echo my name is  ${{ secrets.MAIL_USERNAME }}
         
 #     - name: Build project with Maven
 #       run: |
