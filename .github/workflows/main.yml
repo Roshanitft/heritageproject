@@ -15,10 +15,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-        env_file: ./.env
+        env: dotenv
     - name: run
       run: |
-           port: ${{ env.port }}
+           port: ${{ env.PORT }}
         
 #     - name: Build project with Maven
 #       run: |
